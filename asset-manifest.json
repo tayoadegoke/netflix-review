@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38e0f3b2.chunk.css",
+    "main.js": "/static/js/main.31fe4688.chunk.js",
+    "main.js.map": "/static/js/main.31fe4688.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c3e628ce.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c3e628ce.js.map",
+    "static/js/2.b5b50543.chunk.js": "/static/js/2.b5b50543.chunk.js",
+    "static/js/2.b5b50543.chunk.js.map": "/static/js/2.b5b50543.chunk.js.map",
+    "static/js/3.c66650a6.chunk.js": "/static/js/3.c66650a6.chunk.js",
+    "static/js/3.c66650a6.chunk.js.map": "/static/js/3.c66650a6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.38e0f3b2.chunk.css.map": "/static/css/main.38e0f3b2.chunk.css.map",
+    "static/js/2.b5b50543.chunk.js.LICENSE.txt": "/static/js/2.b5b50543.chunk.js.LICENSE.txt",
+    "static/media/netflix-logo.5bc85db9.png": "/static/media/netflix-logo.5bc85db9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3e628ce.js",
+    "static/js/2.b5b50543.chunk.js",
+    "static/css/main.38e0f3b2.chunk.css",
+    "static/js/main.31fe4688.chunk.js"
+  ]
+}
