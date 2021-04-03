@@ -31,9 +31,8 @@ const MovieExcerpt: React.FC<MovieExcerptProps> = ({
         }
       })
       .catch((err: any) => {
-        console.log(err);
       });
-  }, []);
+  }, [title]);
   return (
     <div className="movieExcerpts">
       <div className="movieExcerpts_sideBar">

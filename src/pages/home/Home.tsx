@@ -11,7 +11,7 @@ const Home: FC<HomeProps> = () => {
     return (
         <div className='app'>
             <Banner/>
-            <Row title='NETFLIX ORIGINALS' fetchUrl={requests.fetchNetflixOriginals} isLargeRow></Row>
+            <Row title='HOT BLOCKBUSTERS' fetchUrl={requests.fetchActionMovies} isLargeRow></Row>
             <Row title="Trending Now"  fetchUrl={requests.fetchTrending}/>
             <Row title="Top Rated"  fetchUrl={requests.fetchTopRated}/>
             <Row title="Action Movies"  fetchUrl={requests.fetchActionMovies}/>

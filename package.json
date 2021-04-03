@@ -1,6 +1,5 @@
 {
   "name": "netflix-review",
-  "homepage": "https://notthattayo.github.io/netflix-review/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

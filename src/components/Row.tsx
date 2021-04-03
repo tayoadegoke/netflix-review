@@ -26,7 +26,7 @@ const Row: FC<RowProps> = ({ title, fetchUrl, isLargeRow }) => {
         {movies.map((movie) => (
           <img
             key={movie.id}
-            onClick={(): void => history.push(`movie/${movie.id}`)}
+            onClick={(): void => history.push({pathname:`/movie/${movie?.id}`,state:{name:movie?.title || movie?.name || movie?.original_name}})}
             className={`row_poster ${isLargeRow && "row__posterLarge"}`}
             src={`${base_url}${
               isLargeRow ? movie.poster_path : movie.backdrop_path

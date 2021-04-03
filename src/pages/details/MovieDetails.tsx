@@ -1,6 +1,5 @@
-import { request } from "http";
 import React, { FC, useEffect, useState } from "react";
-import { useParams, useHistory, Link } from "react-router-dom";
+import { useParams, useHistory, Link ,useLocation} from "react-router-dom";
 import {
   Dialog,
   DialogActions,
@@ -10,11 +9,11 @@ import {
   Button,
   CircularProgress,
 } from "@material-ui/core";
-import instance from "../../utils/axios";
 import { requests, base_url } from "../../utils/requests";
 import "./movieDetails.css";
 import MovieExcerpt from "../../components/MovieExcerpt";
 import logo from "../../assets/netflix-logo.png";
+import axios from "axios";
 const MovieDetailProps = {
   name: "",
   poster_path: "",
@@ -31,15 +30,24 @@ const MovieDetailProps = {
 const MovieDetails: FC<any> = () => {
   const params: { id: string } = useParams();
   const history = useHistory();
+  const location = useLocation<{name:string}>();
   const [movieDetails, setMovieDetails] = useState(MovieDetailProps);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     async function fetchData() {
       setLoading(true);
-      const request = await instance.get(requests.fetchMovieById(params.id));
-      setMovieDetails(request.data);
-      setLoading(false);
+      const request = await axios.get(requests.fetchMovieById(params.id)).then((res)=>{
+        setMovieDetails(res.data);
+        if(location.state.name.toLowerCase() !== res.data.title.toLowerCase()){
+          setOpen(true);
+        }else{
+        setLoading(false);
+        }
+      }).catch((err)=>{
+        setOpen(true);
+      });
+      
       return request;
     }
     fetchData();

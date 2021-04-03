@@ -14,7 +14,7 @@ const Banner: FC = (props: Props) => {
   const [movie, setMovie] = useState(initialMovieProps);
   useEffect(() => {
     async function fetchData() {
-      const request = await instance.get(requests.fetchTrending);
+      const request = await instance.get(requests.fetchActionMovies);
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
@@ -40,7 +40,6 @@ const Banner: FC = (props: Props) => {
         backgroundPosition: "center center",
       }}
     >
-      {console.log(movie)}
       <div className="banner__contents">
         <h1 className="banner__title">
           {" "}
@@ -50,7 +49,7 @@ const Banner: FC = (props: Props) => {
           <IconButton>
             <button
               className="banner__button"
-              onClick={() => history.push(`/movie/${movie?.id}`)}
+              onClick={() => history.push({pathname:`/movie/${movie?.id}`,state:{name:movie?.title || movie?.name || movie?.original_name}})}
             >
               More
             </button>
