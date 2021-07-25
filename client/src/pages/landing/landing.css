@@ -1,0 +1,172 @@
+.landing{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.landing__background {
+    filter: brightness(0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+   
+  .landing__logo{
+    width: 200px;
+    position: relative;
+    
+  }
+
+.landing__logo-img{
+  position: absolute;
+  top: 0.3em;
+  left: 0.5em;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.landing__button {
+  position: absolute;
+  background-color:#e50914;
+  color: white;
+  top: 2.5rem;
+  right: 1.9rem; 
+  padding: 20px;
+  font-size: .9rem;
+  padding: .65rem .8rem;
+  line-height: normal;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.landing__center-box {
+    position: relative;
+    margin: 15%;
+   padding: 2% 7%;
+   background-color:transparent;
+   text-align: center;
+
+}
+
+.landing__center-box-message {
+  font-size: 3.1rem;
+  margin: 0 auto;
+  max-width: 640px;
+  color: white;
+  
+}
+.landing__center-box-sub-message {
+  margin: 1rem auto;
+  font-size: 1.625rem;
+  color: white;
+  font-weight: 400;
+  
+}
+.landing__center-box-get-started-btn {
+  background-color: #e50914;
+  margin: 1rem auto;
+  font-size: 1.625rem;
+  min-height: 60px;
+  min-width: 40%;
+  color: white;
+  padding: 0.3em;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.landing__signIn-box{
+  position: relative;
+  margin: 10% auto;
+ padding: 2% 3%;
+ background-color:rgba(0,0,0, 0.9);
+ max-width: 350px;
+ min-height: 450px;
+
+}
+.landing__signIn-box h1{
+  color: white;
+  font-weight: bold;
+}
+.landing__signIn-box-close{
+ color: white;
+ float: right;
+ cursor: pointer;
+  margin-top: -1%;
+  margin-right: -5%;
+}
+
+.landing__signIn-box-form input {
+  display: block;
+  margin-top: 1em;
+  height:50px;
+  background: #333;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  color:white;
+  
+}
+.landing__signIn-box-form input::placeholder {
+  color:white;
+  opacity: 0.5;
+  padding-left: 1.5em;
+}
+.landing__signIn-box-form input:focus{
+  padding-left: 1.5em;
+}
+
+.landing__signIn-btn{
+  background-color : #e50914 ;
+  min-height: 60px;
+  margin-top: 2em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.landing__signUpText{
+  font-size: 0.9em;
+  color: white
+}
+.landing__signUpText span {
+  color: #e50914;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing__center-box {
+        margin-top: 29%;
+        padding: 2% 1%;
+    }
+
+    .landing__center-box-message {
+        margin: 3% auto;
+        margin-bottom: 10%; 
+        font-size: 2.9em;
+      }
+      .landing__center-box-sub-message {
+        font-size: 1.525rem;    
+        
+      }
+
+      .landing__signIn-box{
+        margin-top: 39%;
+       
+      }
+      .landing__signIn-box-close{
+         margin-top: 0;
+         margin-right: 0;
+         font-size: 0.8rem;
+       }
+      
+  }

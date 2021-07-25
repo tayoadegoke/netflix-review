@@ -1,0 +1,46 @@
+.movieExcerpts{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+.movieExcerpts_sideBar{
+    height: 300px;
+    width: 30%;
+}
+.movieExcerpts_sideBarImgContainer{
+    width: 100%;
+    height: 100%;
+}
+.movieExcerpts_sideBarImgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ 
+.movieExcerpts_mainBar{
+    color: white;
+    margin-top: -1em;
+    padding-left: 4%;
+    width: 70%;
+}
+.movieExcerpts_mainBar_yearDetails {
+    margin-top: -1.3rem;
+}
+.movieExcerpts_mainBar_text{
+    color: #9ab
+}
+iframe {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .movieExcerpts{   
+    flex-direction: column;
+    }
+    .movieExcerpts_sideBar{
+        width: 100%;
+    }
+    .movieExcerpts_mainBar{
+        width: 100%;
+    }
+  }
