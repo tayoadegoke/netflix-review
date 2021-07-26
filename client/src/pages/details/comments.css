@@ -1,59 +1,58 @@
 .comments {
-    margin-top: 2em;
+  margin-top: 2em;
 }
-.comments h2{
-    color:white; 
-    padding-bottom:0.5em; 
-    border-bottom:solid 2px red;
+.comments h2 {
+  color: white;
+  padding-bottom: 0.5em;
+  border-bottom: solid 2px red;
 }
 .comments_commentInput textarea {
-  width:80%;
-  min-height:100px;
-  padding:1em;
+  width: 80%;
+  min-height: 100px;
+  padding: 1em;
 }
 .comments_commentInput button {
-    border:none;
-    background:#e50914;
-    color:white;
-    display:block;
-    margin-top:2em;
-    padding:1em;
-    border-radius:3px; 
-    cursor:pointer;
+  border: none;
+  background: #e50914;
+  color: white;
+  display: block;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 3px;
+  cursor: pointer;
 }
-.comments_commentBox  {
-    border-bottom:solid 2px gray;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
- }
+.comments_commentBox {
+  border-bottom: solid 2px gray;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
 .comments_commentBox h3 {
-   display: inline;
+  display: inline;
 }
 
 .comments_commentBox span {
-    font-size: 0.7em;
-    color: lightgrey;
- }
-
- .movie-details__logout {
-     float: right;
-     margin-right: 10%;
-     display: flex;
- }
- .movie-details__logout button {
-    border: none ;
-    border-radius: 4px;
-    height: 35px;
-    vertical-align: middle;
-    margin-top: 5px;
-    cursor: pointer;
+  font-size: 0.7em;
+  color: lightgrey;
 }
- .movie-details__logout p {
-     padding-right: 1em;
- }
- 
- .MuiDialog-paper{
-     background-color: transparent !important;
-     width: 100%;
-     
- }
+
+.movie-details__logout {
+  float: right;
+  margin-right: 10%;
+  display: flex;
+}
+.movie-details__logout button {
+  border: none;
+  border-radius: 4px;
+  height: 35px;
+  vertical-align: middle;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.movie-details__logout p {
+  padding-right: 1em;
+}
+
+#container-signup .MuiDialog-paper {
+  background-color: transparent !important;
+  width: 100%;
+}
