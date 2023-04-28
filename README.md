@@ -1,6 +1,6 @@
 # NETFLIX REVIEW
 
-<img src="./background-landing.jpg" alt="netflix-review" width="300" height="300">
+<img src="./src/background-landing.jpg" alt="netflix-review" width="300" height="300">
 
 ## About
 
