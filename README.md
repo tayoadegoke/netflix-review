@@ -1,6 +1,6 @@
 # NETFLIX REVIEW
 
-<img src="https://res.cloudinary.com/notthattayo/image/upload/v1643374787/netflix.png" alt="netflix-review" width="300" height="300">
+<img src="./background-landing.jpg" alt="netflix-review" width="300" height="300">
 
 ## About
 
