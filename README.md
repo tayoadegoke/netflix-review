@@ -14,8 +14,8 @@ In the project directory, you can run:
 
 Create a .env file in the root directory and copy all environment variables from .env.example file and replace values with your own values.
 
-If the backend is running, you can start the front end by running
+If the backend (see https://github.com/tayoadegoke/netflix-review-server ) is running, you can start the front end by running
 
 ### `npm start`
 
-Note - The front end has features that work without the back end running. However without the backend a user cannot signin, signup or post comments.
+Note - The front end has features that work without the back end running. However without the backend a user cannot signin, signup or post comments. 
