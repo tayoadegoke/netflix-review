@@ -1,6 +1,6 @@
 # NETFLIX REVIEW
 
-<img src="https://res.cloudinary.com/notthattayo/image/upload/v1643374787/netflix.png"  width="300" height="300">
+<img src="./src/assets/background-landing.jpg" alt="netflix-review" width="300" height="300">
 
 ## About
 
@@ -10,10 +10,12 @@ This project allows a user to view various movie trailers and also lets logged i
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Create a .env file in the root directory and copy all environment variables from .env.example file and replace values with your own values.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If the backend is running, you can start the front end by running
+
+### `npm start`
+
+Note - The front end has features that work without the back end running. However without the backend a user cannot signin, signup or post comments.

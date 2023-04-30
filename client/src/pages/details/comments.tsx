@@ -24,7 +24,7 @@ function Comments(props: any) {
 
   useEffect(() => {
     axios
-      .get(`https://netflix-review.herokuapp.com/comments/${postId}`)
+      .get(`${process.env.REACT_APP_BASE_URL}/comments/${postId}`)
       .then((response) => {
         setMovieComments(response.data);
       });
@@ -33,10 +33,9 @@ function Comments(props: any) {
   const postComment = () => {
     if (!message) {
       alert("cannot post empty comment");
-    }
-    if (userId && message) {
+    } else if (userId && message) {
       axios
-        .post("https://netflix-review.herokuapp.com/comments", {
+        .post(`${process.env.REACT_APP_BASE_URL}/comments`, {
           postId,
           userId,
           message,
@@ -50,6 +49,7 @@ function Comments(props: any) {
           }
         );
     } else {
+      alert("You need to be logged in to post a comment");
       setOpen(true);
     }
   };
@@ -94,7 +94,7 @@ function Comments(props: any) {
         >
           <DialogContent>
             <DialogContentText id="alert-dialog-description">
-              <Login setOpen={setOpen} />
+              <Login setOpen={setOpen} open={open} />
             </DialogContentText>
           </DialogContent>
           <DialogActions>
