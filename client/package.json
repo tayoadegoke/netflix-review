@@ -31,7 +31,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
- 
   "browserslist": {
     "production": [
       ">0.2%",
@@ -45,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@types/material-ui": "^0.21.8"
+    "@types/material-ui": "^0.21.8",
+    "postcss": "^8.4.31",
+    "postcss-safe-parser": "^6.0.0"
   }
 }
